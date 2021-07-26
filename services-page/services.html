@@ -2,10 +2,9 @@
 <html><head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
- 	<!--<link rel="manifest" href="/site.webmanifest">-->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	<title>Services</title>
 	<link href="services.css" rel="stylesheet" type="text/css">
 
@@ -34,38 +33,43 @@
 	<section class="mainarea">
 		<p class="text">We offer a wide range of services here at, ICX Systems &amp; Programming LLC.<br><br> From hardware issues to web design!<br><br></p>
 	</section>
-    <div class="headerforsecondayarea"><a name="todo">Computer Hardware</a></div>
+    <div class="headerforsecondayarea"><a name="todo">Services Available</a></div>
     <section class="secondaryarea">
-		<p class="text">We offer the following services for computer hardware:</p>
+		
         <article>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <select id="dropdownmenu" onchange="GetSelectedTextValue(this)">
+                <option value="0">Select a Service</option>
+                <option value="1">Computer Hardware</option>
+                <option value="2">Mobile Hardware</option>
+                <option value="3" >Web Design</option>
+                <option value="4" >Misc. Services</option>
+            </select>
+            
+            
+            
+            
+            <!--
             <div class="btn-group">
-                <button class="btn-toggle" style="width:151px;" type="button" id="characters" onchange="GetText(this)">Services</button>
+                <button class="btn-toggle" style="width:151px;" type="button" id="textToChange">Services</button>
                 <ul class="dropdown-menu">
-                    <li id="PChw">Computer Hardware</li>
-                    <li id="Mobhw">Mobile Hardware</li>
-                    <li id="WebDes">Web Design</li>
-                    <li id="Msc">Misc. Services</li>
+                    <li id="PChw" class="PChw">Computer Hardware</li>
+                    <li id="Mobhw" class="Mobhw">Mobile Hardware</li>
+                    <li id="WebDes" class="WebDes">Web Design</li>
+                    <li id="Msc" class="Msc">Misc. Services</li>
                 </ul>
             </div>
-            <ul id="PChwd" style="display: none;">
-                <li>
-                    <label id="PCrd">PC Repair <span style="color: orange"> *DIAG</span> -- Starts at $25</label><br><p class="secondarytext">A diagnostic to see / verify what is wrong.</p>
-                </li>
-                <li>
-                    <label id="PCr">PC Repair -- Price Varies<br><p class="secondarytext">A simple repair such as: battery replacement, LCD screen replacement on a laptop, hard drive upgrade/replacement, keyboard/mouse issues.</p></label>
-                </li>
-                <li>
-                    <label id="PCmw">PC Malware/Vire removal -- Starts at $45</label>
-                </li>
-                <li>
-                    <label id="PCdc">PC Disk Clean Up -- Starts at $30</label>
-                    </li>
-                </ul>
+        -->
           </article>
+          <p class="text2">We offer the following services: </p>
+          <p class="text3" id="PChw" style="display: none;">PC Repair <span style="color: orange;"> *DIAG</span> -- <strong>Starts at $25</strong><br><span  style="font-style: italic;">A diagnostic to see / verify what is wrong.</span><br><br>PC Repair -- <strong>Price Varies</strong><br><span style="font-style: italic;">A simple repair such as: battery replacement, LCD screen replacement on a laptop, hard drive upgrade/replacement, keyboard/mouse issues.</span><br><br>PC Malware/Virus removal -- <strong>Starts at $45</strong><br><br>PC Disk Clean Up -- <strong>Starts at $30</strong></p>
+          <p class="text3" id="Mobhw" style="display: none;">Phone Repair <span style="color: orange;"> *DIAG</span> -- <strong>Starts at $25</strong> <br><span style="font-style: italic;">diagnostic to see/verify what is wrong with device.</span><br><br>Screen Replacement -- <strong>Starts at $45</strong><br><br>iCloud Unlock Removal -- <strong>Starts at $40</strong><br><span style="font-style: italic;">Works only for the following iPhones: 4s, 5, 5c, 5s, 6, 6s, 7, 7-Plus, 8, 8-Plus, X</span></p>
+          <p class="text3" id="WebDes" style="display: none;">Web Page Consulation -- <strong>Free</strong><br><span style="font-style: italic;">We go through a run down of how you want the page to look like.</span><br><br>Website Design(1 page) -- <strong>Starts at $35 per hour</strong><br><br>Website Design(2+ pages) -- <strong>Starts at $35 per hour</strong><br><br>Website Design(Revision/Update) -- <strong>Starts at $35</strong><br><span style="font-style: italic;">Revision/Updates of/to your current website, (not one I have built)</span><br><br>Website Design(Revision/Update) -- <strong>Starts at $25</strong><br><span style="font-style: italic;">Revision/Updates of/to your current website, (one I have built)</span><br><br></p>
+          <p class="text3" id="MscSer" style="display: none;">TV LCD Repair -- <strong>Starts at $80, price varies</strong><br><br>Other Misc Services -- <strong>Price Varies</strong><br><span style="font-style: italic;">Need help setting up an email or email forwarding?, Need help blocking an email/domain?, Need help setting up your home network to block certain websites/domains?, Need help setting up a Goolge Home/ Alexa/ Etc,.? We can help with all of this!</span></p>
+
 	</section>
     <footer>
       <p style="color: rgb(255 255 255)">© Nelson Orellana 2021 &amp; ICX S&amp;P LLC. | Emporia, KS</p>
     </footer>
-    <script src="services.js"></script>
+    <script src="served.js"></script> 
 </body></html>
